@@ -51,7 +51,7 @@ namespace Presto.SWCamp.Lyrics
            
             var timer = new DispatcherTimer
             {
-                Interval = TimeSpan.FromMilliseconds(100)
+                Interval = TimeSpan.FromMilliseconds(1)
             };
 
             timer.Tick += Timer_Tick;
@@ -85,7 +85,9 @@ namespace Presto.SWCamp.Lyrics
             }*/
             //MessageBox.Show(check.ToString());
             //if (check < 0) return;
-            TextLyrics.Text = map[timestore[-check]];
+           
+            if(check<0)
+            TextLyrics.Text = map[timestore[Math.Max(0, ~check - 1)]];
             
         }
     }

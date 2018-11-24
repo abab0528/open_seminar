@@ -33,8 +33,8 @@ namespace Presto.SWCamp.Lyrics
             InitializeComponent();
             //predtosdk.prestoservice.playerstreamchanged +=song;
             //가사 읽어오기
-            var lines = File.ReadAllLines(@"C:\Users\cbnu\Downloads\Presto.Lyrics.Sample\Musics\숀 (SHAUN) - Way Back Home.lrc");
-            var lineCount = File.ReadAllLines(@"C:\Users\cbnu\Downloads\Presto.Lyrics.Sample\Musics\숀 (SHAUN) - Way Back Home.lrc").Length;
+            var lines = File.ReadAllLines(@"C:\Users\cbnu\Downloads\Presto.Lyrics.Sample\open_seminar\Musics\TWICE - Dance The Night Away.lrc");
+            var lineCount = File.ReadAllLines(@"C:\Users\cbnu\Downloads\Presto.Lyrics.Sample\open_seminar\Musics\TWICE - Dance The Night Away.lrc").Length;
             map = new Dictionary<double, string>();
             var titledata= lines[1].Split(':');
             title.Text = titledata[1].Substring(0,titledata[1].Length-1);

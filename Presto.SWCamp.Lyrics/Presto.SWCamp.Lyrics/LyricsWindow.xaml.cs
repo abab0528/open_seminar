@@ -31,7 +31,7 @@ namespace Presto.SWCamp.Lyrics
         public LyricsWindow()
         {
             InitializeComponent();
-            
+            //predtosdk.prestoservice.playerstreamchanged +=song;
             //가사 읽어오기
             var lines = File.ReadAllLines(@"C:\Users\cbnu\Downloads\Presto.Lyrics.Sample\Musics\숀 (SHAUN) - Way Back Home.lrc");
             var lineCount = File.ReadAllLines(@"C:\Users\cbnu\Downloads\Presto.Lyrics.Sample\Musics\숀 (SHAUN) - Way Back Home.lrc").Length;
